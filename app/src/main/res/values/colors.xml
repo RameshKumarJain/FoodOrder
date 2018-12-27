@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6e5067</color>
+    <color name="colorPrimaryDark">#442C3E</color>
+    <color name="colorAccent">#0E4C92</color>
+    <color name="text_color">#E0E5EC</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="rating_good">#039468</color>
+    <color name="rating_average">#E08904</color>
+    <color name="rating_bad">#DF3B26</color>
+    <color name="background">#92999e</color>
+    <color name="transparent">@android:color/transparent</color>
+</resources>

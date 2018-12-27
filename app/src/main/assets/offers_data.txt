@@ -1,0 +1,93 @@
+[
+  {
+    "_id": 1,
+    "offerName": "First Order",
+    "offerCode": "FOOD50",
+    "description": "New users can avail this offers for their first order and get 50% off upto Rs.100",
+    "discountPercentage": 50,
+    "maxDiscountPrice": 100,
+    "countAllowedPerUser": 1,
+    "termsAndConditions": "Now get Flat 50% Off upto Rs.100 on your Food order.\nThis offer is valid for new users limited period offer",
+    "validTill": "15/01/2020",
+    "paidVia": "",
+    "imageName": "offer-logo.jpg"
+  },
+  {
+    "_id": 2,
+    "offerName": "Paytm Offer",
+    "offerCode": "PAYTMFOOD",
+    "description": "Order your food using PAYTM and get 50% off upto Rs.75. Valid once per user.",
+    "discountPercentage": 50,
+    "maxDiscountPrice": 75,
+    "countAllowedPerUser": 1,
+    "termsAndConditions": "Get 50% cashback upto Rs.75 on your food order using PAYTM.\nValid once per user per day during offer period.\nNo minimum transaction amount is required.\nMaximum cashback of Rs.75",
+    "validTill": "01/04/2019",
+    "paidVia": "PAYTM",
+    "imageName": "paytm-logo.jpeg"
+  },
+  {
+    "_id": 3,
+    "offerName": "Freecharge Offer",
+    "offerCode": "FREEFOOD",
+    "description": "Cashback upto Rs.75 for 2 times. Order your food using Freecharge and get 40% off",
+    "discountPercentage": 40,
+    "maxDiscountPrice": 50,
+    "countAllowedPerUser": 2,
+    "termsAndConditions": "Get 50% cashback upto Rs.75 on your food order using PAYTM.\nValid once per user per day during offer period.\nNo minimum transaction amount is required.\nMaximum cashback of Rs.75",
+    "validTill": "15/01/2019",
+    "paidVia": "FREECHARGE",
+    "imageName": "freecharge-logo.jpg"
+  },
+  {
+    "_id": 4,
+    "offerName": "PhonePe Offer",
+    "offerCode": "FOODSPCL30",
+    "description": "Cashback upto Rs.75. Order your food using PhonePe and get 30% off. Valid once per user",
+    "discountPercentage": 30,
+    "maxDiscountPrice": 50,
+    "countAllowedPerUser": 1,
+    "termsAndConditions": "Get 50% cashback upto Rs.75 on your food order using PAYTM.\nValid once per user per day during offer period.\nNo minimum transaction amount is required.\nMaximum cashback of Rs.75",
+    "validTill": "31/12/2018",
+    "paidVia": "PHONEPE",
+    "imageName": "phonepe-logo.png"
+  },
+  {
+    "_id": 5,
+    "offerName": "Flat Offer",
+    "offerCode": "FLAT30",
+    "description": "Users can avail this offer for 3 time and get discount upto Rs.85",
+    "discountPercentage": 30,
+    "maxDiscountPrice": 85,
+    "countAllowedPerUser": 3,
+    "termsAndConditions": "Now get Flat 30% on food order.\nMaximum discount of Rd.85 can be avail.\nOffer is valid for 3 Times.",
+    "validTill": "19/11/2018",
+    "paidVia": "",
+    "imageName": "offer-logo.jpg"
+  },
+  {
+    "_id": 6,
+    "offerName": "Card Offer",
+    "offerCode": "CARDS20",
+    "description": "Cardholders will get 20% off using this promotion code upto Rs.100 allowed once per user",
+    "discountPercentage": 20,
+    "maxDiscountPrice": 100,
+    "countAllowedPerUser": 1,
+    "termsAndConditions": "Maximum discount upto Rs.100. \nThe offer is available only upon making full payment by a valid and unexpired Debit/Credit card. \nOffer is not valid for cash on Delivery",
+    "validTill": "20/12/2018",
+    "paidVia": "CARD",
+    "imageName": "card-logo.jpeg"
+  },
+  {
+    "_id": 7,
+    "offerName": "New Year Offer",
+    "offerCode": "NEW2019",
+    "description": "Get 50% off on this new year upto Rs.50 valid only once per user.",
+    "discountPercentage": 50,
+    "maxDiscountPrice": 50,
+    "countAllowedPerUser": 1,
+    "termsAndConditions": "Now get Flat 50% Off upto Rs.50 on your Food order.\nThis offer is valid for once per users",
+    "validTill": "31/12/2018",
+    "paidVia": "",
+    "imageName": "offer-logo.jpg"
+  }
+]

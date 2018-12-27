@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1"
+    tools:context=".OrderTrackActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/order_track_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="Track Order"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/order_tract_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_track_toolbar"
+        android:background="#ECEFF1"
+        android:paddingBottom="48dp"
+        android:paddingTop="48dp">
+
+        <TextView
+            android:id="@+id/orderHotelName"
+            android:layout_width="192dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="#1D1F21"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/orderTotalPrice"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/orderHotelName"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderHotelName"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="72dp"
+            android:gravity="center"
+            android:textColor="#1D1F21"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/orderProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="196dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/orderStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="24dp"
+            android:indeterminateTint="@color/colorAccent"
+            android:max="5"
+            android:progress="1"
+            android:progressTint="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/orderStatusMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderProgressBar"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/view_order"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_below="@id/order_tract_content"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:text="Goto Home"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp" />
+
+</RelativeLayout>

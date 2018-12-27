@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestaurantHomeFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAccent"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:titleTextColor="@color/white">
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="192dp"
+            android:scrollHorizontally="true"
+            android:text="@string/location_txt"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/modifyLocationBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="12dp"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/ic_mode_edit_black_24dp"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/toolbar">
+
+        <TextView
+            android:id="@+id/searchTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:maxWidth="192dp"
+            android:layout_marginStart="12dp"
+            android:minWidth="96dp"
+            android:gravity="center"
+            android:layout_below="@id/searchResult"
+            android:background="@drawable/border_rectangle"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_cancel_searchTxt"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_below="@id/searchResult"
+            android:layout_alignBaseline="@+id/searchTxt"
+            android:layout_toEndOf="@+id/searchTxt"
+            android:background="@drawable/ic_cancel_black_24dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/searchResult"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:maxWidth="192dp"
+            android:textColor="#000"
+            android:minWidth="144dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/sort_rating_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center|end"
+            android:minWidth="144dp"
+            android:text="@string/rating"
+            android:paddingEnd="12dp"
+            android:paddingStart="12dp"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"/>
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/restaurant_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchView">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

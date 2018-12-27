@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offer_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingEnd="12dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/offer_img"
+        android:layout_width="144dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/offer_name"
+        android:layout_width="192dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/offer_description"
+        android:layout_width="192dp"
+        android:layout_height="72dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/offer_name"
+        android:layout_marginTop="12dp"
+        android:maxHeight="96dp"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/offer_code_txt"
+        android:layout_width="144dp"
+        android:layout_height="72dp"
+        android:layout_below="@id/offer_img"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border_rectangle"
+        android:gravity="center"
+        android:minWidth="96dp"
+        android:padding="12dp"
+        android:textColor="@color/colorAccent" />
+
+    <ProgressBar
+        android:id="@+id/offer_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="144dp"
+        android:layout_height="24dp"
+        android:layout_below="@+id/offer_description"
+        android:layout_marginTop="12dp"
+        android:layout_toStartOf="@id/offerUsedCount"
+        android:indeterminateTint="@color/colorAccent"
+        android:max="2"
+        android:progress="0"
+        android:progressTint="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/offerUsedCount"
+        android:layout_width="48dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/offer_description"
+        android:layout_marginTop="12dp"
+        android:gravity="end"
+        android:textSize="16sp" />
+
+</RelativeLayout>

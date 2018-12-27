@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp">
+
+    <ImageView
+        android:id="@+id/order_item_veg_status"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/nv_logo" />
+
+    <TextView
+        android:id="@+id/order_item_name"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@id/order_item_veg_status"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/order_item_price"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toStartOf="@id/order_item_quantity"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/order_item_discount_price"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/order_item_price"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_toStartOf="@id/order_item_quantity"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/order_item_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@id/order_item_quantity_sum"
+        android:gravity="center_vertical"
+        android:minWidth="24dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/order_item_quantity_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:minWidth="48dp"
+        android:textSize="16sp"
+        android:layout_marginEnd="12dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

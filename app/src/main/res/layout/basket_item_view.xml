@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:paddingTop="12dp"
+    >
+
+    <ImageView
+        android:id="@+id/basket_veg_status"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/nv_logo"
+        />
+
+    <TextView
+        android:id="@+id/basket_item_name"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toEndOf="@id/basket_veg_status"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/basket_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@id/btn_item_decrement"
+        android:layout_marginStart="12dp"
+        android:gravity="end"
+        android:maxWidth="72dp"
+        android:minWidth="48dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/basket_item_discount_price"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/btn_item_decrement"
+        android:layout_marginStart="12dp"
+        android:gravity="end"
+        android:maxWidth="72dp"
+        android:minWidth="48dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_item_decrement"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_toStartOf="@id/item_quantity"
+
+        android:background="@drawable/ic_remove_black_24dp" />
+
+    <TextView
+        android:id="@+id/item_quantity"
+        android:layout_width="24dp"
+        android:maxWidth="48dp"
+        android:layout_height="24dp"
+        android:layout_toStartOf="@id/btn_item_increment"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn_item_increment"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_toStartOf="@id/item_quantity_sum"
+        android:background="@drawable/ic_add_black_24dp"
+        />
+
+    <TextView
+        android:id="@+id/item_quantity_sum"
+        android:layout_width="wrap_content"
+        android:minWidth="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="24dp"
+        android:gravity="end"
+        android:maxWidth="48dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
